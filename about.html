@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>My blog</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <a id="header-title" href="index.html">My Blog</a>
+            <ul id="header-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+            <div class="about">
+                <div class="about-author">
+                    <img src="img/portrait.jpg">
+                </div>
+
+                <h1 class="about-title">About Me</h1>
+                <div class="about-content">
+                    <p>Hi there! I'm aspiring blogger. </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt aliquam magni alias delectus,
+                        molestias harum molestiae nemo.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="column">
+                <h4>My Links</h4>
+                <p>
+                    <a href="https://twitter.com/your profile link here">Twitter</a>
+                    <br>
+                    <a href="https://facebook.com/ur profile link here">Facebook</a>
+                </p>
+
+            </div>
+
+            <div class="column">
+                <h4>My Story</h4>
+                <p>
+                    Hi there! I'm aspiring blogger.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--
+
+Amazing! The box model is a rectangular box that wraps around every HTML element and consists of margins, borders, 
+padding and the actual content.
+
+.box {
+ width: 100px;
+ height: 25px;
+ padding: 10px;
+ border: 5px solid black;
+ margin: 10px;
+}
+
+total size will be...150px
+
+
+<p>I'm the actual content.</p>
+background-color: #44b3c2;
+width: 150px;
+padding: 25px;
+border: 25px solid #f1a94e;
+margin: 25px;
+display:inline;
+visibility:hidden;
+display:none;
+
+Margins are the outermost part 
+of the box model, 
+creating white space around an element; separating it from its neighbors.
+ 
+
+border: 2px solid #44b3c2;
+ margin-top: 10px;
+margin-right: 25px;
+ margin-bottom: 10px;
+ margin-left: 25px;
+ same as this..   
+  margin: 
+10px 25px 10px 25px
+; 
+
+
+The padding is the innermost part of the box model, 
+creating white space around an 
+element's content and inside of its margins and borders.
+
+p {
+ 
+padding: 25px;
+ border: 2px solid #44b3c2;
+}
+
+ background-color: #44b3c2;
+ width: 150px;
+ height: 100px;
+ padding: 25px;
+ border: 25px solid #f1a94e;
+ 
+margin: 25px 0px;
+
+
+The element's dimension properties don't 
+refer to the visible dimensions of an element but its actual content.
+Changing the box-sizing 
+property allows us to include the padding and borders in an element's total dimensions
+
+ <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+.box {
+ width: 300px;
+ height: 100px;
+ padding: 25px;
+ border: 2px solid black;
+ margin: 25px;
+}
+#box2 {
+ box-sizing: border-box;
+}
